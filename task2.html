@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5. Завдання 2</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лабораторна робота №5. JavaScript</h1>
+            <h2>Виконала: студентка групи АнД-31 Ткачук Софія</h2>
+            <h3>Варіант №2, 9</h3>
+        </header>
+
+        <!-- Головне меню -->
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a href="index.html" class="main-menu__link">Головна</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="task1.html" class="main-menu__link">Завдання 1</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="task2.html" class="main-menu__link main-menu__link--current">Завдання 2</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- ==================== ЗАВДАННЯ 2.1 ==================== -->
+        <section class="b-section">
+            <h2>Завдання 2.1. Введення країн (Варіант 2)</h2>
+            <div class="b-div-zadanie">
+                <p><strong>Умова.</strong> У поле вводу вводиться країна і натискається Enter. При натисканні на Enter введені країни записуються в абзац під поле вводу через кому. Тобто по кожному натисканню Enter в абзац додаються все нові і нові країни.</p>
+            </div>
+            <input type="text" id="countryInput" class="b-input" placeholder="Введіть країну та натисніть Enter">
+            <p id="countryResult" class="b-result"></p>
+        </section>
+
+        <!-- ==================== ЗАВДАННЯ 2.2 ==================== -->
+        <section class="b-section">
+            <h2>Завдання 2.2. Заповнення таблиці (Варіант 9)</h2>
+            <div class="b-div-zadanie">
+                <p><strong>Умова.</strong> Дана пуста таблиця. При натисканні на кнопку заповнити її наступним чином — парні рядки від'ємні числа, непарні — додатні, головна діагональ — 0.</p>
+            </div>
+            <button class="b-button" onclick="fillTable()">Заповнити таблицю</button>
+            <table id="matrixTable" class="b-table">
+                <tbody>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="js/task2_1.js"></script>
+    <script src="js/task2_2.js"></script>
+</body>
+</html>

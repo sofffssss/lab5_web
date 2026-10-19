@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота №5. Завдання 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<body>
+    <main class="b-main">
+        <header class="b-header">
+            <h1>Лабораторна робота №5. JavaScript</h1>
+            <h2>Виконала: студентка групи АнД-31 Ткачук Софія</h2>
+            <h3>Варіант №2</h3>
+        </header>
+
+        <!-- Головне меню -->
+        <nav class="main-menu">
+            <ul class="main-menu__list">
+                <li class="main-menu__item">
+                    <a href="index.html" class="main-menu__link">Головна</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="task1.html" class="main-menu__link main-menu__link--current">Завдання 1</a>
+                </li>
+                <li class="main-menu__item">
+                    <a href="task2.html" class="main-menu__link">Завдання 2</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Завдання 1 -->
+        <section class="b-section">
+            <h2>Завдання 1. Концерти (Варіант 2)</h2>
+            <div class="b-div-zadanie">
+                <p><strong>Умова.</strong> Створити масиви значень:</p>
+                <ul>
+                    <li>концертна група чи виконавець;</li>
+                    <li>місце проведення концерту (допускається пусте значення);</li>
+                    <li>дата проведення концерту.</li>
+                </ul>
+                <p>Квиток потрібно придбати за 5 днів до концерту. Вивести повідомлення про те, що сьогодні останній термін придбання квитка, чи сьогодні йде концерт. Якщо не вказано місце проведення концерту, вивести додаткове повідомлення «Невідома адреса проведення концерту».</p>
+            </div>
+
+            <button class="b-button" onclick="ras()">Перевірити концерти</button>
+            <div id="rezult"></div>
+        </section>
+    </main>
+
+    <script src="js/task1.js"></script>
+</body>
+</html>

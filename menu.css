@@ -1,0 +1,84 @@
+/* ============================================================
+   Головне меню (спільне для всіх сторінок)
+   ============================================================ */
+
+   .main-menu {
+    padding: 10px 0 20px;
+}
+
+.main-menu__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.main-menu__item {
+    display: inline-block;
+}
+
+.main-menu__item::after {
+    content: "|";
+    color: #a1a1a1;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 5px;
+}
+
+.main-menu__item:last-child::after {
+    content: none;
+}
+
+.main-menu__link {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding: 10px 15px;
+    margin: 0 5px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    color: #8e2d8e;
+    transition: color 0.3s;
+    border-bottom: 3px solid transparent;
+}
+
+.main-menu__link:hover,
+.main-menu__link--current {
+    color: #b7067b;
+    border-bottom-color: #b7067b;
+}
+
+/* Адаптивність меню */
+@media (max-width: 550px) {
+    .main-menu__list {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .main-menu__item {
+        display: block;
+    }
+
+    .main-menu__item::after {
+        content: none;
+    }
+
+    .main-menu__link {
+        display: block;
+        padding: 12px 15px;
+        margin: 2px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .main-menu__link:hover,
+    .main-menu__link--current {
+        background-color: rgba(183, 6, 123, 0.08);
+        border-radius: 6px;
+    }
+}
